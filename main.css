@@ -1,0 +1,44 @@
+/* tiêu đề và icon */
+
+#tieu_de_lon {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#tieude {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* thông tin và tuỳ chỉnh */
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    background-color: white;
+    color: black;
+}
+
+#bang_tuychinh {
+    margin: 10px 0px;
+}
+
+
+/* setting */
+
+#setting {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}

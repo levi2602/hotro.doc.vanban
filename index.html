@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>LeviTruong the website</title>
-    </head>
-    <body>
-        <h2 style="color: brown;">Thạch Phi Trương</h2>
-        <ul title="Một số liên kết">
-            <li> <a href="https://www.facebook.com/truong.levi23">Facebook</a></li>
-            <li> <a href="https://www.instagram.com/phi.truong.thach.23/">Instagram</a></li>
-            <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Liên kết đặc biệt</a></li>
-        </ul>
-    </body>
+
+<head>
+    <title>hỗ trợ đọc văn bản </title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <!-- tựa đề -->
+    <div id="tieu_de_lon">
+        <div id="tieude">
+            <img style="flex: 1; width: 100px; border-radius:10px" id="icon" src="9f696d798e765f280667.jpg" alt="SRT_icon">
+            <h1 style="float: 1; width: fit-content; ">Hỗ trợ đọc văn bản </h1>
+        </div>
+    </div>
+    <!-- bảng thông tin và tuỳ chỉnh -->
+    <div id="form">
+        <div>
+            <textarea style="max-width: 80vw ; max-height: 50vh; width: 365px; height: 250px;">Nhập văn bản bất kỳ vào đây</textarea>
+        </div>
+        <div>
+            <div>
+                <table class="center" id="bang_tuychinh">
+                    <tr>
+                        <th>Ngôn ngữ</th>
+                        <th>Tốc độ</th>
+                        <th>Lần lặp</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="vi" name="fav_language" value="Tiếng Việt">
+                            <label for="vi">Tiếng Việt</label><br>
+                            <input type="radio" id="en" name="fav_language" value="English">
+                            <label for="en">English</label><br>
+                            <input type="radio" id="km" name="fav_language" value="ភាសាខ្មែរ">
+                            <label for="km">ភាសាខ្មែរ</label><br>
+                        </td>
+                        <td>
+                            <input type="radio" id="slow" name="speed" value="Chậm">
+                            <label for="vi">Chậm</label><br>
+                            <input type="radio" id="nor" name="speed" value="Vừa">
+                            <label for="en">Vừa</label><br>
+                            <input type="radio" id="fast" name="speed" value="Nhanh">
+                            <label for="km">Nhanh</label><br>
+                        </td>
+                        <td>
+                            <input type="number" id="re" min="1" max="10">
+                            <label for="re"></label><br>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <input type="button" id="finish_button" value="Hoàn tất">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="setting">
+        <a href="http://www.youtube.com"><img style="width: 40px; height: 40px; margin:10px;" src="https://cdn-icons-png.flaticon.com/512/126/126472.png" alt="setting"></a>
+    </div>
+</body>
+
 </html>
