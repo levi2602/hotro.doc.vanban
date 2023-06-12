@@ -11,6 +11,10 @@
 #tieude {
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
@@ -20,6 +24,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    border-radius: 10px;
+    flex-direction: row;
 }
 
 table,
@@ -27,11 +36,22 @@ th,
 td {
     border: 1px solid rgba(0, 0, 0, 0.452);
     background-color: white;
+    width: fit-content;
     color: black;
+}
+
+table {
+    border-radius: 0;
 }
 
 #bang_tuychinh {
     margin: 10px 0px;
+}
+
+#finish_button {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
 }
 
 
@@ -41,4 +61,15 @@ td {
     position: fixed;
     top: 0px;
     right: 0px;
+}
+
+html {
+    background-image: url(./istockphoto-1198475956-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
