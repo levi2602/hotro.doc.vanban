@@ -1,10 +1,33 @@
-function textaudiofile(text) {
-    document.getElementById('voice_src').setAttribute('src', text)
+const giong = new SpeechSynthesisUtterance
+var dung = false
+
+function phat_dung() {
+    if (dung) {
+        speechSynthesis.pause();
+        console.log('paused')
+        document.getElementById('paus').value = 'Tiếp tục'
+        dung = false
+    } else {
+        speechSynthesis.resume();
+        console.log('resume')
+        document.getElementById('paus').value = 'Tạm dừng'
+        dung = true
+    }
+
 }
 
 function onButtonClick() {
-    var vanban = document.getElementById('vanban').value
-    var link = 'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q={' + vanban + '}&tl=vi&speed=0.5'
-    textaudiofile(link)
-    document.getElementById('voice_ctr').removeAttribute('hidden')
+    var noidung = document.getElementById('vanban').value;
+    var speed = document.getElementById('speed').value;
+    var lan = document.getElementById('re').value;
+    giong.text = (noidung + ' ').repeat(lan)
+    giong.pitch = 0;
+    giong.rate = speed;
+    speechSynthesis.resume;
+    speechSynthesis.speak(giong);
+}
+
+function cancel() {
+    speechSynthesis.cancel();
+    console.log('canceled')
 }

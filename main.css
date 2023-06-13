@@ -48,12 +48,6 @@ table {
     margin: 10px 0px;
 }
 
-#finish_button {
-    width: 50%;
-    height: 100%;
-    margin: 10px;
-}
-
 
 /* setting */
 
@@ -72,4 +66,18 @@ html {
 .center {
     display: flex;
     justify-content: center;
+}
+
+#linh {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.voice {
+    flex: 1;
+    height: 30px;
+    margin: 5px;
 }
