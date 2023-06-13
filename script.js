@@ -1,5 +1,5 @@
 const giong = new SpeechSynthesisUtterance
-var dung = false
+var dung = true
 
 function phat_dung() {
     if (dung) {
